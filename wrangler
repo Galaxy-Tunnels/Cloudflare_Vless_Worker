@@ -1,0 +1,15 @@
+name = "galaxy-vproxy-worker"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+PROXY_LIST_URL = "https://gprox-galaxy.github.io/PROXYIP.txt"
+DNS_RESOLVER_URL = "https://cloudflare-dns.com/dns-query"
+# Set a non-default path in the dashboard, not in this file.
+# WS_PATH = "/replace-with-a-long-random-path"
+
+# Set the UUID as a secret:
+# npx wrangler secret put UUID
+
+# Required for cloudflare:sockets in Wrangler/Workers deployments.
+compatibility_flags = ["nodejs_compat"]
