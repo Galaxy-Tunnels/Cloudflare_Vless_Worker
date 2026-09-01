@@ -1,6 +1,6 @@
 name = "galaxy-vproxy-worker"
 main = "worker.js"
-compatibility_date = "2026-09-01"
+compatibility_date = "2024-03-20"
 
 [vars]
 PROXY_LIST_URL = "https://gprox-galaxy.github.io/PROXYIP.txt"
